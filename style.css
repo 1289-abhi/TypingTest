@@ -1,0 +1,181 @@
+body{
+  background-color: #FFFAFA;
+  font-family: "Century Gothic", sans-serif;
+}
+
+.top{
+  background-color: #F5F5F5;
+  width:80%;
+  height:auto;
+  margin-left: 10%;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+  box-shadow: 5px 5px 10px #D3D3D3;
+  float:left;
+}
+.typingContent{
+
+  padding: 5% 5% 5% 5%;
+  color:#36454F;  /* green for right text:#148F77    red for wrong text: #FF7474*/
+  font-weight: bold;
+
+}
+.middle{
+  background-color: #FFFAFA;
+  width:80%;
+  height:auto;
+  margin-left: 10%;
+  float:left;
+  font-weight:bold;
+}
+.box{
+  float:left;
+  width: 33%;
+}
+.bottom{
+  width:80%;
+  height: 30%;
+  margin-top:2.5%;
+  margin-left: 10%;
+  margin-bottom: 2.5%;
+  float:left;
+}
+textarea{
+  margin-bottom:0;
+  border:0;
+  font-size: 17px;
+  font-family: "century gothic", sans-serif;
+  background-color: #F5F5F5;
+  resize: none;
+}
+textarea::placeholder{
+  text-align: center;
+  padding-top:10%;
+  font-size: 40px;
+}
+.reset{
+  height:auto;
+  width:100%;
+}
+#resetButton{
+  padding: 20px 50px 20px 50px;
+  border: 0;
+  font-weight: bold;
+  font-family: "Century Gothic", sans-serif;
+  background: linear-gradient(to right, #CC97FB 50%, #F5F5F5 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .2s ease-out;
+  display:none;
+}
+#resetButton:hover{
+  background-position: left bottom;
+  cursor: pointer;
+  color:white;
+}
+
+.correct_char{
+  color:white;
+  background-color:#148F77;
+
+}
+.incorrect_char{
+  color:white;
+  background-color:#FF7474;
+}
+#grossSpeed{
+  display:none;
+}
+#netSpeed{
+  display:none;
+}
+.netSpeedChart{
+  float:left;
+  width:40%;
+  padding:2.5% 5% 2.5% 5%;
+
+}
+.grossSpeedChart{
+  float:left;
+  width:40%;
+  padding:2.5% 5% 2.5% 5%;
+}
+#Graphs{
+  display:none;
+  float:left;
+  width:80%;
+  margin-left: 10%;
+  height:30%;
+}
+.timingOptions{
+  width:100%;
+  position:absolute;
+  overflow: hidden;
+  background-color: #F5F5F5;
+  font-family: "Century Gothic", sans-serif;
+  font-weight: bold;
+  height:100%;
+}
+.animation{
+  transition: all 1s ease-in-out;
+  height:100%;
+}
+.animation:target{
+  height:0;
+}
+.option_form{
+  background-color: white;
+  width:30%;
+  height:40%;
+  margin-left: 35%;
+  margin-top: 15%;
+  text-align: center;
+  overflow:hidden;
+  box-shadow: 5px 5px 10px #D3D3D3;
+  border-radius: 50px 5px 5px 5px;
+}
+select{
+  margin-bottom: 5%;
+  width:50%;
+  font-size: 15px;
+  font-family: "Century Gothic", sans-serif;
+  font-weight: bold;
+}
+#time{
+  margin-top: 20%;
+}
+#start{
+  width:50%;
+  height:50px;
+  font-size: 15px;
+  font-weight: bold;
+  border:0;
+  font-family: "Century Gothic", sans-serif;
+  background: linear-gradient(to right, #CC97FB 50%, #F5F5F5 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .2s ease-out;
+
+}
+#start:hover{
+  background-position: left bottom;
+  color:white;
+  cursor: pointer;
+}
+
+#restartButton{
+  padding: 20px 50px 20px 50px;
+  border: 0;
+  font-weight: bold;
+  font-family: "Century Gothic", sans-serif;
+  background: linear-gradient(to right, #CC97FB 50%, #F5F5F5 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .2s ease-out;
+  display:none;
+}
+#restartButton:hover{
+  background-position: left bottom;
+  cursor: pointer;
+  color:white;
+}

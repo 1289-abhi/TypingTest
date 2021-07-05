@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <title>typing test</title>
+  </head>
+  <body>
+    <div class="timingOptions" id="timingOptions">
+      <div class="option_form">
+        <form class="options">
+          <select class="time" name="time" id="time">
+            <option value="1" disabled selected>Select Time</option>
+            <option value="1">1 minute</option>
+            <option value="2">2 minute</option>
+            <option value="3">3 minute</option>
+            <option value="4">4 minute</option>
+          </select><br>
+          <select class="difficulty" name="difficulty" id="difficulty">
+            <option value="easy" disabled selected>Select Difficulty</option>
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+          </select><br>
+          <a href="#timingOptions"><button type="button" name="button" onclick="setValues()" id="start">start</button></a>
+        </form>
+      </div>
+    </div>
+    <center>
+    <div class="main" id="main">
+      <div class="top" id="top">
+        <div class="typingContent" id="typingContent">Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a groupof at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph. A paragraph is defined as "a group of sentences or a single sentence that forms a unit" (Lunsford and Connors 116). Length and appearance do not determine whether a section in a paper is a paragraph. For instance, in some styles of writing, particularly journalistic styles, a paragraph can be just one sentence long. Ultimately, a paragraph is a sentence or group of sentences that support one main idea. In this handout, we will refer to this as the "controlling idea," because it controls what happens in the rest of the paragraph.</div>
+      </div>
+      <div class="middle" id="middle">
+        <div class="box" id="timer">
+          <div class="timer" >
+            <h3>Timer</h3>
+            <p id="TM">Go!</p>
+          </div>
+        </div>
+        <div class="box" id="grossSpeed">
+          <div class="grossSpeed">
+            <h3>Average Gross Speed</h3>
+            <p id="GS">50</p>
+          </div>
+        </div>
+        <div class="box" id="netSpeed">
+          <div class="netSpeed">
+            <h3>Average Net Speed</h3>
+            <p id="NS">50</p>
+          </div>
+        </div>
+        <div class="box" id="errors">
+          <div class="errors">
+            <h3>Errors</h3>
+            <p id="ER">0</p>
+          </div>
+        </div>
+        <div class="box" id="accuracy">
+          <div class="accuracy">
+            <h3>Accuracy</h3>
+            <p id="AC">100%</p>
+          </div>
+        </div>
+      </div>
+      <div id="Graphs">
+        <div class="netSpeedChart">
+          <canvas id="netSpeedChart" ></canvas>
+        </div>
+        <div class="grossSpeedChart">
+        <canvas id="grossSpeedChart"></canvas>
+        </div>
+        </div>
+      <div class="bottom" id="bottom">
+        <div class="textBox" id="textBox">
+            <textarea class="typedContent" id="typedContent" rows="10" cols="100" placeholder="Start Typing" oninput="charChecker()" onfocus="startGame()"></textarea>
+        </div>
+        <div class="reset" id="reset">
+          <button type="button" name="restart" id="restartButton" onclick="window.location.reload()">Restart</button>
+            <button type="button" name="reset" id="resetButton" onclick="resetValues()">Reset</button>
+        </div>
+      </div>
+    </div>
+  </center>
+    <script type="text/javascript"src="script.js">
+
+    </script>
+  </body>
+</html>
